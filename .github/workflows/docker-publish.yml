@@ -25,4 +25,4 @@ jobs:
 
       
     - name: Docker Push
-      run: docker push doctor1914/prometheus
+      run: docker push doctor1914/prometheus:$(date +%s)
