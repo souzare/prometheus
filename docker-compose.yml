@@ -6,7 +6,9 @@ services:
   prometheus:
     image: prom/prometheus
     container_name: prometheus
-    command: ["--config.file=/prometheus-data/prometheus.yml"]
+    command: 
+      - '--config.file=/prometheus-data/prometheus.yml'
+      - '--web.enable-admin-api'
     volumes:
       - ./prometheus-data:/prometheus-data
       - prometheus:/prometheus

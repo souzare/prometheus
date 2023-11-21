@@ -16,7 +16,7 @@ scrape_configs:
 - job_name : app_python
   static_configs:
   - targets:
-    - 44.214.6.39:5000
+    - 3.239.24.210:5000
 
 - job_name: node-interno
   static_configs:
